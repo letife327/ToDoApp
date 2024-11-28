@@ -1,9 +1,10 @@
+import java.security.Provider;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
 
-public class TaskService {
+public class TaskService extends Storage implements ITaskService {
     public static List<Task> tasks = new ArrayList<Task>();
     public static int count = 0;
 

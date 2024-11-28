@@ -3,7 +3,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-public class UserService extends Storage {
+public class UserService extends Storage  implements IUserService {
     public static List<User> users = new ArrayList<User>();
 
     public void register() {
