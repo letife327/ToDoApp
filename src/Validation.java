@@ -27,7 +27,7 @@ public class Validation {
         return false;
     }
     public static boolean taskDueDateValidation(String dueDate) {
-        String regex = "^\\d{4}\\.(0[1-9]|1[0-2])\\.(0[1-9]|[12]\\d|3[01])$";
+        String regex = "^\\d{4}\\-(0[1-9]|1[0-2])\\-(0[1-9]|[12]\\d|3[01])$";
        if(dueDate.matches(regex)) {
            return true;
        }
